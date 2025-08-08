@@ -1,0 +1,14 @@
+
+.page__bd_spacing {
+  margin-top: 25px;
+}
+
+.weui-form-preview__value_in-bd {
+  color: #000;
+}
+
+.code_canvas {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto 0 auto;
+}
