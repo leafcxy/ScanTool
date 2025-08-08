@@ -38,14 +38,6 @@ Page({
     })
   },
   onLoad: function () {
-    // wx.getSystemInfo({
-    //   success: (res) => {
-    //     this.setData({
-    //       sliderLeft: (res.windowWidth / this.data.tabs.length - sliderWidth) / 2,
-    //       sliderOffset: res.windowWidth / this.data.tabs.length * this.data.activeIndex
-    //     });
-    //   }
-    // });
     const windowInfo = wx.getWindowInfo()
     this.setData({
       sliderLeft: (windowInfo.windowWidth / this.data.tabs.length - sliderWidth) / 2,
