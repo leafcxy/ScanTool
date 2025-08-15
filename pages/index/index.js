@@ -14,19 +14,23 @@ const scanType = {
   'EAN_8': '一维码(EAN_8)',
   'EAN_13': '一维码(EAN_13)',
   'ITF': '一维码(ITF)',
+  'MAXICODE': '一维码(MAXICODE)',
   'PDF_417': '二维码(PDF_417)',
   'RSS_14': '一维码(RSS_14)',
+  'RSS_EXPANDED': '一维码(RSS_EXPANDED)',
   'UPC_A': '一维码(UPC_A)',
   'UPC_E': '一维码(UPC_E)',
-  'WX_CODE': '二维码(WX_CODE)'
+  'UPC_EAN_EXTENSION': '一维码(UPC_EAN_EXTENSION)',
+  'WX_CODE': '二维码(WX_CODE)',
+  'CODE_25': '一维码(CODE_25)'
 }
 
 Page({
   data: {
     scanResult: {
-      isShow: false,
-      type: '',
-      text: '',
+      isShow: true,
+      type: '二维码(QR_CODE)',
+      text: 'https://github.com/leafcxy',
       msg: '',
     },
   },
