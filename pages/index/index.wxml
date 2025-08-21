@@ -12,15 +12,17 @@
           <view class="weui-form-preview__label">类型</view>
           <view class="weui-form-preview__value">{{ scanResult.type }}</view>
         </view>
-        <view wx:if="{{ !scanResult.msg }}" class="weui-form-preview__item">
-          <view class="weui-form-preview__label">内容</view>
-          <view class="weui-form-preview__value weui-form-preview__value_in-bd">
-            <text selectable="true">{{ scanResult.text }}</text>
-          </view>
-        </view>
         <view wx:if="{{ !!scanResult.msg }}" class="weui-form-preview__item">
           <view class="weui-form-preview__label">失败原因</view>
           <view class="weui-form-preview__value">{{ scanResult.msg }}</view>
+        </view>
+        <view wx:if="{{ !scanResult.msg }}" class="weui-form-preview__item">
+          <view class="weui-form-preview__label">内容</view>
+        </view>
+        <view wx:if="{{ !scanResult.msg }}" style="text-align: left;overflow: scroll;">
+          <view class="custom-text">
+            <text class="auto-wrap" selectable="true">{{ scanResult.text }}</text>
+          </view>
         </view>
       </view>
       <view wx:if="{{ !scanResult.msg }}" class="weui-form-preview__ft">

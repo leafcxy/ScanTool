@@ -17,3 +17,16 @@
 .weui-form-preview__value_in-bd {
   color: #000;
 }
+
+.custom-text {
+  font-size: 20px;
+  color: black;
+  height: 100px;
+  line-height: 26px;
+}
+
+.auto-wrap {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
